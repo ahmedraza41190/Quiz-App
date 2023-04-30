@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Quiz App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://github.com/ahmedraza41190/Quiz-App/blob/main/quiz-logo.jpg?raw=true">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="right-d1">
+
+            <h1 style="text-align: center;" class="h1">
+                Sign in
+            </h1>
+
+            <img class="logo" src="./images/my logo.png.jpg" alt="">
+
+            <input class="search-bar" required type="email" placeholder="Enter your email, Phone number, username"
+                id="semail" /> <br>
+            <input style="margin-top: 20px;" class="search-bar" required type="password" placeholder="Password"
+                id="spass" />
+            <button style="
+             margin-top: 20px;
+             margin-left: 150px;
+             display: flex;
+             justify-content: center;
+             text-align: center;
+             align-items: center;
+             color: white;
+             background-color: rgb(3, 119, 196);
+             border-radius: 10px;
+             width: 100px;
+             height: 50px;
+             padding: 10px
+             ;" onclick="signup()">SignUp</button>
+
+        </div>
+
+
+
+
+    </div>
+    <div class="footer-img">
+
+        <div class="footer">
+
+            <span class="footer-span">
+                Quiz App by Ahmed Raza Nagori | 2023
+            </span>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script >
+        $('.message a').click(function(){
+            $('form').animate({height: "toggle" , opacity: "toggle"}, "medium");
+        });
+        </script>
+        <script src="app.js"></script>
+</body>
+
+</html>

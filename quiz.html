@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="shortcut icon" href="https://github.com/ahmedraza41190/Quiz-App/blob/main/quiz-logo.jpg?raw=true">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <!-- <div class="wrapper">
+      <p>
+          <span id="hr">0</span>:
+          <span id="min">0</span>:
+          <span id="sec">0</span> :
+          <span id="miliSec">0</span>
+
+      </p> <br>
+      <button class="Wbtn" onclick="signin()" id="btn">Start</button>
+      <button class="Wbtn" onclick="stoped()">Stop</button>
+      <button class="Wbtn" onclick="reset()">Reset</button>
+        </div> -->
+
+
+
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+
+                <div class="time">
+                    <span id="min">0</span>
+                    <span>:</span>
+                    <span id="sec">0</span>
+                </div>
+
+                <h2 id="question">Question Text</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" id="a" class="answer">
+                        <label for="a" id="a_text">Answer</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="b" class="answer">
+                        <label for="b" id="b_text">Answer</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="c" class="answer">
+                        <label for="c" id="c_text">Answer</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" name="answer" id="d" class="answer">
+                        <label for="d" id="d_text">Answer</label>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+            <button id="submit">Submit</button>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script >
+    $('.message a').click(function(){
+        $('form').animate({height: "toggle" , opacity: "toggle"}, "medium");
+    });
+    </script>
+    <script src="quiz.js"></script>
+
+
+</body>
+
+
+</html>
